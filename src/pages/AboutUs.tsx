@@ -17,7 +17,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         </div>
 
         {/* Hero Section */}
-        <main className="flex-1 flex flex-col lg:flex-row items-center justify-between mt-12 lg:mt-16 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-12 lg:gap-8">
+        <main className="flex-1 flex flex-col lg:flex-row items-center justify-between mt-12 lg:mt-16 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-24 gap-12 lg:gap-8">
           {/* Left Content */}
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:gap-8 z-10 w-full pt-[80px]">
             <h1
@@ -29,7 +29,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               FULLY CHARGED.
             </h1>
 
-            <p className="text-base sm:text-xl lg:text-[18px] xl:text-[30px] text-gray-200 leading-[1.5] max-w-full md:max-w-[600px] xl:max-w-[650px] m-0">
+            <p className="font-inter text-[18px] text-gray-200 leading-[1.5] max-w-full md:max-w-150 xl:max-w-[650px] m-0">
               Meet We Charge—the only app you need to manage your home AC
               charger and find high-speed AC/DC public stations on the go. From
               your garage to the open roads, we keep you connected with an
@@ -39,12 +39,30 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             {/* App Store Buttons */}
             <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-6 md:mt-10 lg:mt-12 w-full">
               {/* Google Play */}
-              <button className="flex items-center justify-center bg-white text-black px-4 sm:px-6 py-3 rounded-3xl gap-3 sm:gap-4 hover:scale-105 transition-transform border-none cursor-pointer w-full sm:w-auto">
-                <img
-                  src="/Playstore.svg"
-                  alt="Play Store"
+              <button className="flex items-center justify-center bg-white text-black px-2 sm:px-6 py-2 rounded-3xl gap-3 sm:gap-4 hover:scale-105 transition-transform border-none cursor-pointer w-full sm:w-auto">
+                <svg
+                  viewBox="0 0 39 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-8 sm:w-8 sm:h-9 object-contain"
-                />
+                >
+                  <path
+                    d="M18.209 21.0131L0.166504 40.3442C0.168199 40.3476 0.168198 40.3527 0.169893 40.3562C0.724031 42.4552 2.622 44 4.87583 44C5.77737 44 6.62298 43.7537 7.34827 43.3226L7.40589 43.2883L27.7141 31.4587L18.209 21.0131Z"
+                    fill="#EA4335"
+                  />
+                  <path
+                    d="M36.4614 17.7214L36.4444 17.7095L27.6765 12.579L17.7986 21.4525L27.7121 31.4568L36.4325 26.3777C37.9611 25.5428 38.9999 23.9159 38.9999 22.041C38.9999 20.1763 37.9763 18.558 36.4614 17.7214Z"
+                    fill="#FBBC04"
+                  />
+                  <path
+                    d="M0.166072 3.65445C0.0576168 4.05818 0 4.48244 0 4.92038V39.08C0 39.518 0.0576168 39.9422 0.167767 40.3442L18.8288 21.5075L0.166072 3.65445Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M18.3422 21.9998L27.6795 12.5754L7.39499 0.703018C6.65783 0.256521 5.79697 -8.58307e-05 4.87679 -8.58307e-05C2.62296 -8.58307e-05 0.721604 1.54811 0.167465 3.64888C0.167465 3.65059 0.165771 3.6523 0.165771 3.65401L18.3422 21.9998Z"
+                    fill="#34A853"
+                  />
+                </svg>
                 <div className="text-left font-figtree">
                   <div className="text-[10px] sm:text-[12px] font-semibold uppercase leading-tight">
                     GET IT ON
@@ -57,11 +75,21 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
 
               {/* App Store */}
               <button className="flex items-center justify-center bg-white text-black px-4 sm:px-6 py-3 rounded-3xl gap-3 sm:gap-4 hover:scale-105 transition-transform border-none cursor-pointer w-full sm:w-auto">
-                <img
-                  src="/Apple.svg"
-                  alt="Apple"
+                <svg
+                  viewBox="0 0 42 52"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                   className="w-7 h-8 sm:w-8 sm:h-9 object-contain"
-                />
+                >
+                  <path
+                    d="M35.0795 27.6534C35.1049 25.6603 35.6305 23.706 36.6073 21.9725C37.5841 20.2389 38.9803 18.7824 40.6661 17.7385C39.5952 16.1979 38.1824 14.93 36.5399 14.0356C34.8974 13.1412 33.0706 12.6449 31.2044 12.586C27.2234 12.1651 23.3641 14.9855 21.3355 14.9855C19.2676 14.9855 16.1443 12.6278 12.7809 12.6975C10.6054 12.7683 8.48524 13.4056 6.62693 14.5471C4.76862 15.6887 3.23557 17.2957 2.17714 19.2115C-2.40761 27.2074 1.01221 38.9586 5.4041 45.4219C7.60147 48.5868 10.1695 52.122 13.5299 51.9967C16.8181 51.8593 18.0462 49.8846 22.0154 49.8846C25.9478 49.8846 27.1 51.9967 30.5285 51.917C34.057 51.8593 36.28 48.738 38.4003 45.5432C39.9791 43.2881 41.194 40.7957 42 38.1584C39.9501 37.2851 38.2007 35.8232 36.97 33.9551C35.7394 32.087 35.0818 29.8954 35.0795 27.6534Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M28.6037 8.33545C30.5276 6.00909 31.4754 3.01894 31.2459 0C28.3067 0.310958 25.5916 1.72596 23.6418 3.96306C22.6884 5.05595 21.9583 6.32738 21.493 7.70468C21.0278 9.08198 20.8366 10.5381 20.9304 11.9899C22.4006 12.0051 23.855 11.6842 25.1841 11.0512C26.5132 10.4181 27.6825 9.4896 28.6037 8.33545Z"
+                    fill="black"
+                  />
+                </svg>
                 <div className="text-left font-figtree">
                   <div className="text-[10px] sm:text-[12px] font-semibold uppercase leading-tight">
                     DOWNLOAD ON THE
@@ -87,15 +115,15 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         </main>
 
         {/* Smart Station Discovery Section */}
-        <section className="w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-20 mb-32 z-10 flex flex-col items-center">
+        <section className="w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-10 mb-12 z-10 flex flex-col items-center">
           {/* Stats Row */}
-          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mb-24">
+          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mb-15">
             {/* Stat 1 */}
             <div
-              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-10 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
+              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-figtree font-normal mb-2 text-center">
+              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
                 Total Chargers Integrated
               </h3>
               <div
@@ -110,10 +138,10 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </div>
             {/* Stat 2 */}
             <div
-              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-10 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
+              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-figtree font-normal mb-2 text-center">
+              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
                 Total Stations
               </h3>
               <div
@@ -128,10 +156,10 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </div>
             {/* Stat 3 */}
             <div
-              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-10 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
+              className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-figtree font-normal mb-2 text-center">
+              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
                 Total Energy Usage
               </h3>
               <div
@@ -147,7 +175,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
           </div>
 
           {/* Info Area */}
-          <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-between gap-12 lg:gap-20">
+          <div className="w-full flex flex-col lg:flex-row items-center lg:items-stretch justify-between">
             {/* Left Side - Phones Image */}
             <div className="flex-1 flex justify-start items-center w-full max-w-175 relative">
               <div className="absolute inset-0 bg-[#ff0044] opacity-20 blur-[100px] rounded-full z-0"></div>
@@ -160,9 +188,9 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </div>
 
             {/* Right Side - Features List */}
-            <div className="flex-1 flex flex-col items-end text-right justify-center py-2">
+            <div className="flex-1 flex flex-col items-end text-right justify-center py-2 mt-8 lg:mt-0">
               <h2
-                className="text-white text-4xl lg:text-[46px] font-bold uppercase leading-[1.1]"
+                className="text-white text-3xl lg:text-[36px] font-bold uppercase leading-[1.1] whitespace-nowrap"
                 style={{ fontFamily: "'WinnerSans', sans-serif" }}
               >
                 SMART STATION DISCOVERY
@@ -170,45 +198,45 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               </h2>
 
               <div
-                className="flex flex-col gap-6 mt-8 w-full"
-                style={{ fontFamily: "'WinnerSans', sans-serif" }}
+                className="flex flex-col w-full font-inter"
+                style={{ fontFamily: "'Inter', sans-serif" }}
               >
-                <div className="flex flex-col items-end">
-                  <h3 className="text-white text-xl md:text-[22px] font-bold mb-1 tracking-wide">
+                <div className="flex flex-col items-end mb-2">
+                  <div className="text-white text-2xl md:text-[28px] font-bold tracking-wide font-inter leading-none">
                     Nearby Station Discovery
-                  </h3>
-                  <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                  </div>
+                  <p className="text-gray-200 text-base md:text-[18px] max-w-[500px] leading-tight font-inter mt-1">
                     Instantly locate the nearest charging points via
                     high-accuracy GPS and an interactive map interface.
                   </p>
                 </div>
 
-                <div className="flex flex-col items-end">
-                  <h3 className="text-white text-xl md:text-[22px] font-bold mb-1 tracking-wide">
+                <div className="flex flex-col items-end mb-2">
+                  <div className="text-white text-2xl md:text-[28px] font-bold tracking-wide font-inter leading-none">
                     Advanced Plug Filtering
-                  </h3>
-                  <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                  </div>
+                  <p className="text-gray-200 text-base md:text-[18px] max-w-[500px] leading-tight font-inter mt-1">
                     Filter by connector types (CCS1, CCS2, GB/T, etc.) to ensure
                     a perfect match for your vehicle's hardware.
                   </p>
                 </div>
 
-                <div className="flex flex-col items-end">
-                  <h3 className="text-white text-xl md:text-[22px] font-bold mb-1 tracking-wide">
+                <div className="flex flex-col items-end mb-2">
+                  <div className="text-white text-2xl md:text-[28px] font-bold tracking-wide font-inter leading-none">
                     Real-Time Availability
-                  </h3>
-                  <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                  </div>
+                  <p className="text-gray-200 text-base md:text-[18px] max-w-[500px] leading-tight font-inter mt-1">
                     View live status updates to see which chargers are
                     "Available," "Occupied," or "Under Maintenance" before you
                     arrive.
                   </p>
                 </div>
 
-                <div className="flex flex-col items-end">
-                  <h3 className="text-white text-xl md:text-[22px] font-bold mb-1 tracking-wide">
+                <div className="flex flex-col items-end mb-2">
+                  <div className="text-white text-2xl md:text-[28px] font-bold tracking-wide font-inter leading-none">
                     Distance & Efficiency
-                  </h3>
-                  <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                  </div>
+                  <p className="text-gray-200 text-base md:text-[18px] max-w-[500px] leading-tight font-inter mt-1">
                     View the exact distance to each station and get optimized
                     navigation routes to save battery life.
                   </p>
@@ -219,7 +247,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         </section>
 
         {/* Find Us Everywhere Section */}
-        <section className="w-full max-w-350 px-4 md:px-8 xl:px-16 mx-auto mt-10 mb-32 z-10 flex flex-col items-center">
+        <section className="w-full max-w-350 px-4 md:px-8 xl:px-16 mx-auto mb-32 z-10 flex flex-col items-center">
           <div className="text-center mb-12">
             <h2
               className="text-white text-4xl md:text-5xl lg:text-[50px] font-bold uppercase leading-[1.1] mb-4"
@@ -234,12 +262,15 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
           </div>
 
           {/* Map Container */}
-          <div className="w-full h-125 md:h-150 rounded-3xl border border-crimson relative overflow-hidden bg-[#121212] drop-shadow-2xl">
+          <div
+            className="w-full h-[60vh] rounded-3xl border border-crimson relative overflow-hidden bg-[#121212] drop-shadow-2xl"
+            style={{ border: "2px solid", color: "#ff0044" }}
+          >
             {/* Static Map Image */}
             <img
               src="/images/map_228.svg"
               alt="WeCharge Map Locations"
-              className="w-full h-full object-cover absolute inset-0 z-0 opacity-80"
+              className="w-full h-full object-cover border-2 absolute inset-0 z-0 opacity-80"
             />
 
             {/* Subtle inner dark gradient overlays for map edges to blend better */}
@@ -249,24 +280,24 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         </section>
 
         {/* Charging Experience Section */}
-        <section className="w-full max-w-350 px-4 md:px-8 xl:px-16 mx-auto mt-20 mb-32 z-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch justify-between gap-12 lg:gap-20">
+        <section className="w-full max-w-350 md:px-8 xl:px-16 mx-auto z-10 flex flex-col-reverse lg:flex-row items-center lg:items-stretch justify-between gap-12 lg:gap-20">
           {/* Left Side - Text */}
-          <div className="flex-1 flex flex-col items-start text-left justify-center py-4">
+          <div className="flex-1 flex flex-col items-start text-left justify-center">
             <h2
-              className="text-white text-4xl lg:text-[48px] font-bold uppercase leading-[1.1] mb-12"
+              className="text-white text-3xl lg:text-[36px] font-bold uppercase leading-[1.1] mb-12"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
               CHARGING EXPERIENCE
             </h2>
 
             <div
-              className="flex flex-col gap-10 w-full"
+              className="flex flex-col w-full"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
               <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+                <div className="text-white text-xl md:text-[24px] font-bold tracking-wide">
                   Scan to Charge
-                </h3>
+                </div>
                 <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
                   Simply scan the QR code on any public charging station to
                   instantly start charging your EV.
@@ -330,53 +361,65 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
           </div>
 
           {/* Right Side - Text */}
-          <div className="flex-1 flex flex-col items-end text-right justify-center py-4">
+          <div className="flex-1 flex flex-col items-end text-right justify-center">
             <h2
-              className="text-white text-4xl lg:text-[46px] font-bold uppercase leading-[1.1] mb-12 max-w-150"
+              className="text-white text-3xl lg:text-[42px] font-bold uppercase leading-[1.1] mb-12 max-w-150"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
               EASY AND SEAMLESS PAYMENT WITH MMQR
             </h2>
 
             <div
-              className="flex flex-col gap-10 w-full items-end"
-              style={{ fontFamily: "'WinnerSans', sans-serif" }}
+              className="flex flex-col w-full items-end font-inter"
+              style={{ fontFamily: "'Inter', sans-serif" }}
             >
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+                <div
+                  className="text-white text-xl md:text-[24px] font-bold tracking-wide"
+                  style={{ fontFamily: "'WinnerSans', sans-serif" }}
+                >
                   Checking Balance and Points
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed font-inter">
                   Easily view your points. Points are valued at 1 Point = 1
                   Kyat.
                 </p>
               </div>
 
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+                <div
+                  className="text-white text-xl md:text-[24px] font-bold tracking-wide"
+                  style={{ fontFamily: "'WinnerSans', sans-serif" }}
+                >
                   Charging History
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed font-inter">
                   Accurately track your charging costs and usage history in real
                   time.
                 </p>
               </div>
 
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+                <div
+                  className="text-white text-xl md:text-[24px] font-bold tracking-wide"
+                  style={{ fontFamily: "'WinnerSans', sans-serif" }}
+                >
                   Payment Options
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed font-inter">
                   Pay conveniently via MMQR, which is integrated with all local
                   banks.
                 </p>
               </div>
 
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+                <div
+                  className="text-white text-xl md:text-[24px] font-bold tracking-wide"
+                  style={{ fontFamily: "'WinnerSans', sans-serif" }}
+                >
                   Coupons and Discounts
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed font-inter">
                   Easily apply your available discount coupons during charging
                   sessions.
                 </p>
@@ -388,7 +431,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         {/* Charging History Section */}
         <section className="w-full max-w-350 px-4 md:px-8 xl:px-16 mx-auto mt-20 mb-32 z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-20">
           {/* Left Side - Text */}
-          <div className="flex-1 flex flex-col items-start text-left justify-center py-4">
+          <div className="flex-1 flex flex-col items-start text-left justify-center">
             <h2
               className="text-white text-4xl lg:text-[46px] font-bold uppercase leading-[1.1] mb-12"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
@@ -397,13 +440,13 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </h2>
 
             <div
-              className="flex flex-col gap-10 w-full"
+              className="flex flex-col w-full"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
-              <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+              <div className="flex flex-col items-start mb-2">
+                <div className="text-white text-xl md:text-[24px] font-bold tracking-wide">
                   Hybrid Tracking System
-                </h3>
+                </div>
                 <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
                   Easily switch between home charger and public charging station
                   records to compare your charging history and spending
@@ -411,29 +454,29 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
                 </p>
               </div>
 
-              <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+              <div className="flex flex-col items-start mb-2">
+                <div className="text-white text-xl md:text-[24px] font-bold tracking-wide">
                   Cost Summary
-                </h3>
+                </div>
                 <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
                   Displays total costs in Points or Myanmar Kyat (MMK).
                 </p>
               </div>
 
-              <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+              <div className="flex flex-col items-start mb-2">
+                <div className="text-white text-xl md:text-[24px] font-bold tracking-wide">
                   Time & Date
-                </h3>
+                </div>
                 <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
                   View precise timestamps for the start and end of each charging
                   session.
                 </p>
               </div>
 
-              <div className="flex flex-col items-start">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-2 tracking-wide">
+              <div className="flex flex-col items-start mb-2">
+                <div className="text-white text-xl md:text-[24px] font-bold tracking-wide">
                   Smart Filtering
-                </h3>
+                </div>
                 <p className="text-gray-200 text-sm md:text-[16px] max-w-125 leading-relaxed">
                   Accurately search past usage records and charging data by date
                   or location.
@@ -487,7 +530,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </div>
 
             <h2
-              className="text-white text-4xl lg:text-[46px] font-bold uppercase leading-[1.1] mb-12 max-w-162.5 z-10 relative"
+              className="text-white text-3xl lg:text-[42px] font-bold uppercase leading-[1.1] mb-12 max-w-162.5 z-10 relative"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
               QUICK REGISTRATION &<br />
@@ -495,14 +538,14 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </h2>
 
             <div
-              className="flex flex-col gap-12 w-full items-end z-10 relative"
-              style={{ fontFamily: "'WinnerSans', sans-serif" }}
+              className="flex flex-col gap-12 w-full items-end z-10 relative font-inter"
+              style={{ fontFamily: "'Inter', sans-serif" }}
             >
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-3 tracking-wide">
+                <div className="text-white text-xl md:text-[24px] font-bold mb-3 tracking-wide font-inter">
                   Account Creation via Phone Number
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-137.5 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-137.5 leading-relaxed font-inter">
                   Create an account in seconds using just your phone number and
                   start using the services immediately without any complicated
                   steps.
@@ -510,10 +553,10 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               </div>
 
               <div className="flex flex-col items-end">
-                <h3 className="text-white text-xl md:text-[24px] font-bold mb-3 tracking-wide">
+                <div className="text-white text-xl md:text-[28px] font-bold mb-3 tracking-wide font-inter">
                   Adding Vehicle Information to Your Account
-                </h3>
-                <p className="text-gray-200 text-sm md:text-[16px] max-w-137.5 leading-relaxed">
+                </div>
+                <p className="text-gray-200 text-sm md:text-[16px] max-w-137.5 leading-relaxed font-inter">
                   By saving your car's details in your account, you will receive
                   the best and most compatible service for your vehicle every
                   time you charge.

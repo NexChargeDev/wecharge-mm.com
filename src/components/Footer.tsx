@@ -14,7 +14,7 @@ const Footer: React.FC<{ className?: string }> = ({ className = "mt-24" }) => {
         <img
           src="/Group-238.svg"
           alt="WeCharge Logo"
-          className="h-10 md:h-14 w-auto"
+          className="h-8 md:h-12 w-auto"
         />
       </div>
 

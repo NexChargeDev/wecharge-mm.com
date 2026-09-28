@@ -32,6 +32,7 @@ module.exports = {
         "num-1": "2px solid #ff0044",
       },
       fontFamily: {
+        sans: ["Inter", "sans-serif"],
         inter: "Inter",
         figtree: "Figtree",
       },
