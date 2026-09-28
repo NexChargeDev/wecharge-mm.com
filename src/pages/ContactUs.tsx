@@ -33,7 +33,7 @@ const ContactUs: FunctionComponent<ContactUsProps> = ({}) => {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col justify-center mt-12 lg:mt-24 relative z-10 w-full max-w-[1600px] mx-auto pb-32">
+      <main className="flex-1 flex flex-col justify-center mt-12 lg:mt-24 relative z-10 w-full max-w-[1600px] mx-auto pb-32 min-h-[80vh]">
         <h1
           className="text-5xl lg:text-[64px] font-bold leading-[1.1] uppercase m-0 tracking-tight mb-12"
           style={{ fontFamily: "'WinnerSans', sans-serif" }}

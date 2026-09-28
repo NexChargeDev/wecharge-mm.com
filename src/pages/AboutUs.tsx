@@ -29,7 +29,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               FULLY CHARGED.
             </h1>
 
-            <p className="font-inter text-[20px] text-gray-200 leading-[1.5] max-w-full m-0">
+            <p className="font-inter text-[20px] text-gray-200 leading-[1.5] max-w-full m-0 mb-12">
               Meet We Charge—the only app you need to manage your home AC
               charger and find high-speed AC/DC public stations on the go. From
               your garage to the open roads, we keep you connected with an
@@ -37,7 +37,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </p>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-10 md:mt-10 lg:mt-16 w-full">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-8 mt-20 w-full">
               {/* Google Play */}
               <button className="flex items-center justify-center bg-white text-black px-2 sm:px-6 py-2 rounded-3xl gap-3 sm:gap-4 hover:scale-105 transition-transform border-none cursor-pointer w-full sm:w-auto">
                 <svg
@@ -109,13 +109,14 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
                 src="/images/handwecharg.svg"
                 alt="App Interface"
                 className="z-10 w-[85%] h-auto object-contain drop-shadow-2xl animate-shake-once"
+                fetchPriority="high"
               />
             </div>
           </div>
         </main>
 
         {/* Smart Station Discovery Section */}
-        <section className="w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-14 mb-12 z-10 flex flex-col items-center">
+        <section className="w-full max-w-[1600px] px-4 mx-auto mt-16 mb-12 z-10 flex flex-col items-center">
           {/* Stats Row */}
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mb-15">
             {/* Stat 1 */}
@@ -186,6 +187,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
                 src="/images/Layer_1.svg"
                 alt="Smart Station App Interface"
                 className="w-full h-auto max-h-200 object-contain z-10 relative drop-shadow-2xl"
+                loading="lazy"
               />
             </div>
 
@@ -273,6 +275,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               src="/images/map_228.svg"
               alt="WeCharge Map Locations"
               className="w-full h-full object-cover border-2 absolute inset-0 z-0 opacity-80"
+              loading="lazy"
             />
 
             {/* Subtle inner dark gradient overlays for map edges to blend better */}
@@ -336,6 +339,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               src="/images/charge-history.svg"
               alt="Charging Experience App Interface"
               className="w-full h-auto max-h-200 object-contain z-10 relative drop-shadow-2xl"
+              loading="lazy"
             />
           </div>
         </section>
@@ -359,6 +363,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               src="/images/Group_242.svg"
               alt="Payment and Top Up Interface"
               className="w-full h-auto max-h-200 object-contain z-10 relative drop-shadow-2xl"
+              loading="lazy"
             />
           </div>
 
@@ -504,6 +509,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               src="/images/Group_236.svg"
               alt="Charging History App Interface"
               className="w-full h-auto max-h-200 object-contain z-10 relative drop-shadow-2xl"
+              loading="lazy"
             />
           </div>
         </section>
@@ -516,6 +522,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               src="/images/charging_history.svg"
               alt="Quick Registration App Interface"
               className="w-full h-auto max-h-200 object-contain z-10 relative drop-shadow-2xl"
+              loading="lazy"
             />
           </div>
 
