@@ -22,7 +22,9 @@ const PrivacyPolicy: FunctionComponent<PrivacyPolicy> = ({}) => {
         </h1>
 
         <div className="text-gray-300 text-base md:text-lg leading-relaxed flex flex-col gap-8 p-8 w-full">
-          <p className="font-semibold text-white">Effective Date:</p>
+          <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
+            Effective Date:
+          </h3>
 
           <p className="text-[18px]">
             This Privacy Policy explains how WeCharge Myanmar Company Limited
@@ -192,7 +194,7 @@ const PrivacyPolicy: FunctionComponent<PrivacyPolicy> = ({}) => {
             <p className="mb-2 text-[18px]">
               Depending on your use of the Service, you retain the ability to:
             </p>
-            <ul className="list-disc pl-6 flex flex-col gap-2">
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[18px]">
               <li>
                 Access, review, and update your personal information directly
                 within the WeCharge app.
@@ -224,7 +226,7 @@ const PrivacyPolicy: FunctionComponent<PrivacyPolicy> = ({}) => {
             <p className="mb-2 text-[18px]">
               <strong>WeCharge Myanmar Company Limited</strong>
             </p>
-            <ul className="list-disc pl-6 flex flex-col gap-2">
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-[18px]">
               <li>
                 <strong>Business Address:</strong> 45-T, Tay Nu Yin Road, 7th
                 Ward, Mayangone Township, Yangon, Myanmar
@@ -232,10 +234,15 @@ const PrivacyPolicy: FunctionComponent<PrivacyPolicy> = ({}) => {
               <li>
                 <strong>Email / Phone:</strong>{" "}
                 <a
-                  href="mailto:wecharge.mm@gmail.com"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href =
+                      `mailto:wecharge.mm` + `@` + `gmail.com`;
+                  }}
                   className="text-blue-400 hover:underline"
                 >
-                  wecharge.mm@gmail.com
+                  wecharge.mm<span>@</span>gmail.com
                 </a>{" "}
                 / +959 967 996 777
               </li>

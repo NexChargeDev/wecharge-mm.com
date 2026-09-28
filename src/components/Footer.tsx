@@ -19,7 +19,7 @@ const Footer: React.FC<{ className?: string }> = ({ className = "mt-24" }) => {
       </div>
 
       {/* Subtext */}
-      <p className="text-gray-300 text-sm md:text-[16px] text-center mb-10 max-w-150 leading-relaxed">
+      <p className="font-inter text-gray-300 text-sm md:text-[16px] text-center mb-10 leading-relaxed">
         Building Myanmar's most reliable and accessible electric vehicle
         charging networks.
       </p>

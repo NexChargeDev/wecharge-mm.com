@@ -30,7 +30,12 @@ const NavMenu: FunctionComponent<NavMenuType> = ({ className = "" }) => {
               className="self-stretch flex-1 overflow-hidden flex items-center max-w-full cursor-pointer"
               onClick={onAboutUsTextClick}
             >
-              <img loading="lazy" alt="Logo" src="/Group-238.svg" className="w-3/5" />
+              <img
+                loading="lazy"
+                alt="Logo"
+                src="/Group-238.svg"
+                className="w-3/5"
+              />
             </Box>
           </Box>
         </Box>
@@ -43,7 +48,7 @@ const NavMenu: FunctionComponent<NavMenuType> = ({ className = "" }) => {
               <Box className="absolute inset-0 rounded-[28.5px] [background:radial-gradient(80.78%_207.89%_at_50%_50%,rgba(8,8,8,0)_43.43%,#ff0044_100%)] z-4" />
             )}
             <Typography
-              className={`m-0! relative z-5 font-semibold text-[14px] lg:text-[16px] xl:text-[18px] ${!isContacts ? "text-white" : "text-gray-300"}`}
+              className={`font-inter m-0! relative z-5 font-semibold text-[14px] ${!isContacts ? "text-white" : "text-gray-300"}`}
               variant="inherit"
               variantMapping={{ inherit: "h3" }}
             >
@@ -58,7 +63,7 @@ const NavMenu: FunctionComponent<NavMenuType> = ({ className = "" }) => {
               <Box className="absolute inset-0 rounded-[28.5px] [background:radial-gradient(80.78%_207.89%_at_50%_50%,rgba(8,8,8,0)_43.43%,#ff0044_100%)] z-4" />
             )}
             <Typography
-              className={`m-0! relative z-5 font-semibold text-[14px] lg:text-[16px] xl:text-[18px] ${isContacts ? "text-white" : "text-gray-300"}`}
+              className={`font-inter m-0! relative z-5 font-semibold text-[14px] ${isContacts ? "text-white" : "text-gray-300"}`}
               variant="inherit"
               variantMapping={{ inherit: "h3" }}
             >

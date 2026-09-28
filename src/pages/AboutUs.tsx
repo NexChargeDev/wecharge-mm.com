@@ -17,11 +17,11 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
         </div>
 
         {/* Hero Section */}
-        <main className="flex-1 flex flex-col lg:flex-row items-center justify-between mt-12 lg:mt-16 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-24 gap-12 lg:gap-8">
+        <main className="flex-1 flex flex-col lg:flex-row items-center justify-between mt-12 lg:mt-16 relative z-10 w-full mx-auto gap-12 lg:gap-8 mb-2">
           {/* Left Content */}
           <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left gap-6 lg:gap-8 z-10 w-full pt-[80px]">
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[75px] font-bold leading-[1.1] uppercase m-0 tracking-tight whitespace-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px] font-bold leading-[1.1] uppercase m-0 tracking-tight whitespace-nowrap animate-slide-in-left"
               style={{ fontFamily: "'WinnerSans', sans-serif" }}
             >
               THE FUTURE IS
@@ -29,7 +29,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               FULLY CHARGED.
             </h1>
 
-            <p className="font-inter text-[18px] text-gray-200 leading-[1.5] max-w-full md:max-w-150 xl:max-w-[650px] m-0">
+            <p className="font-inter text-[20px] text-gray-200 leading-[1.5] max-w-full m-0">
               Meet We Charge—the only app you need to manage your home AC
               charger and find high-speed AC/DC public stations on the go. From
               your garage to the open roads, we keep you connected with an
@@ -37,7 +37,7 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
             </p>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-6 md:mt-10 lg:mt-12 w-full">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-10 md:mt-10 lg:mt-16 w-full">
               {/* Google Play */}
               <button className="flex items-center justify-center bg-white text-black px-2 sm:px-6 py-2 rounded-3xl gap-3 sm:gap-4 hover:scale-105 transition-transform border-none cursor-pointer w-full sm:w-auto">
                 <svg
@@ -104,18 +104,18 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
 
           {/* Right Content - Phone Hand */}
           <div className="flex-1 w-full flex justify-center lg:justify-end items-center mt-12 lg:mt-0 relative">
-            <div className="relative w-full max-w-[450px] lg:max-w-[550px] aspect-square rounded-full flex items-center justify-center -mt-25">
+            <div className="relative w-full aspect-square rounded-full flex items-center justify-center -mt-20">
               <img
                 src="/images/handwecharg.svg"
                 alt="App Interface"
-                className="z-10 w-full h-auto object-contain drop-shadow-2xl animate-shake-once"
+                className="z-10 w-[85%] h-auto object-contain drop-shadow-2xl animate-shake-once"
               />
             </div>
           </div>
         </main>
 
         {/* Smart Station Discovery Section */}
-        <section className="w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-10 mb-12 z-10 flex flex-col items-center">
+        <section className="w-full max-w-[1600px] px-4 md:px-8 xl:px-16 mx-auto mt-14 mb-12 z-10 flex flex-col items-center">
           {/* Stats Row */}
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 mb-15">
             {/* Stat 1 */}
@@ -123,17 +123,19 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
-                Total Chargers Integrated
-              </h3>
-              <div
-                className="text-crimson text-6xl md:text-[72px] font-bold tracking-wide mt-2"
-                style={{
-                  fontFamily: "'WinnerSans', sans-serif",
-                  lineHeight: 1,
-                }}
-              >
-                10,000
+              <div className="flex flex-col items-center">
+                <h2 className="text-white text-xl font-inter font-normal mb-2 text-center">
+                  Total Chargers Integrated
+                </h2>
+                <div
+                  className="text-crimson text-6xl md:text-[72px] font-bold tracking-wide mt-2"
+                  style={{
+                    fontFamily: "'WinnerSans', sans-serif",
+                    lineHeight: 1,
+                  }}
+                >
+                  10,000
+                </div>
               </div>
             </div>
             {/* Stat 2 */}
@@ -141,9 +143,9 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
+              <h2 className="text-white text-xl font-inter font-normal mb-2 text-center">
                 Total Stations
-              </h3>
+              </h2>
               <div
                 className="text-crimson text-6xl md:text-[72px] font-bold tracking-wide mt-2"
                 style={{
@@ -159,9 +161,9 @@ const AboutUs: FunctionComponent<AboutUs> = ({}) => {
               className="flex-1 w-full min-w-70 max-w-125 flex flex-col items-center justify-center py-6 px-6 rounded-[20px] bg-linear-to-br from-crimson/10 to-black/40 backdrop-blur-md"
               style={{ border: "2px solid", color: "#ff0044" }}
             >
-              <h3 className="text-white text-xl font-inter font-normal mb-2 text-center">
+              <h2 className="text-white text-xl font-inter font-normal mb-2 text-center">
                 Total Energy Usage
-              </h3>
+              </h2>
               <div
                 className="text-crimson text-6xl md:text-[72px] font-bold tracking-wide mt-2"
                 style={{
