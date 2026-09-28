@@ -238,11 +238,11 @@ const PrivacyPolicy: FunctionComponent<PrivacyPolicy> = ({}) => {
                   onClick={(e) => {
                     e.preventDefault();
                     window.location.href =
-                      `mailto:wecharge.mm` + `@` + `gmail.com`;
+                      `mailto:info` + `@` + `wecharge-mm.com`;
                   }}
-                  className="text-blue-400 hover:underline"
+                  className="text-white hover:underline"
                 >
-                  wecharge.mm<span>@</span>gmail.com
+                  info@wecharge-mm.com
                 </a>{" "}
                 / +959 967 996 777
               </li>

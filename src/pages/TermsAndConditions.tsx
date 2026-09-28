@@ -25,7 +25,9 @@ const TermsAndConditions: FunctionComponent<TermsAndConditions> = ({}) => {
         </h1>
 
         <div className="text-gray-300 text-base md:text-lg leading-relaxed flex flex-col gap-8 p-8 w-full">
-          <p className="font-semibold text-white text-[18px]">Effective Date:</p>
+          <p className="font-semibold text-white text-[18px]">
+            Effective Date:
+          </p>
 
           <section>
             <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
@@ -393,10 +395,14 @@ const TermsAndConditions: FunctionComponent<TermsAndConditions> = ({}) => {
               <li>
                 <strong className="text-gray-300">Email:</strong>{" "}
                 <a
-                  href="mailto:wecharge.mm@gmail.com"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = `mailto:${"info"}@${"wecharge-mm.com"}`;
+                  }}
                   className="text-crimson hover:underline"
                 >
-                  wecharge.mm@gmail.com
+                  {"info"}@{"wecharge-mm.com"}
                 </a>
               </li>
               <li>
